@@ -1,0 +1,310 @@
+body {
+  background-color: #c46552;
+  letter-spacing: 1px;
+  background-image: url(kreis.png);
+  -webkit-filter: saturate(120%);
+          filter: saturate(120%);
+  background-repeat: repeat;
+}
+body .Ueberschrift {
+  padding-top: 180px;
+}
+body h1 {
+  float: none;
+  width: auto;
+  padding: 20px;
+  color: #f2eee9;
+  line-height: 10px;
+  -webkit-animation: fadeIn 2s ease-in-out;
+          animation: fadeIn 2s ease-in-out;
+  font-family: serif;
+  font-size: 100px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+body #assetsueberschrift {
+  margin-top: -120px;
+}
+body p,
+body .form-label {
+  float: none;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  border: #000000;
+}
+body hr {
+  color: #f9b8af;
+  opacity: 100%;
+}
+body #hintergrund,
+body #anleitung,
+body #uebermich,
+body #collab,
+body #figuren,
+body #karten,
+body #spielfelder,
+body #kontakt {
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+  font-family: serif;
+  color: #f2eee9;
+  font-size: 40px;
+  text-shadow: 4px 4px 4px #000000;
+}
+body .themen {
+  margin-top: 120px;
+}
+body .themen1 {
+  margin-top: 50px;
+}
+body .aufbau {
+  max-width: 75%;
+  margin: 350px auto;
+}
+body .navbar {
+  background-color: #00408c;
+}
+body .navbar-toggler {
+  background-color: #f9b8af;
+  margin-right: 10px;
+}
+body .nav-link {
+  color: #f2eee9;
+}
+body .drake {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  line-height: 60px;
+  -webkit-animation: fadeIn 2s ease-in-out;
+          animation: fadeIn 2s ease-in-out;
+  font-family: serif;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+body #links {
+  text-align: start;
+  background-image: url("drachenkopf.png");
+  background-size: 1400px;
+  background-repeat: no-repeat;
+  background-position-x: 300px;
+  background-position-y: -100px;
+  padding-left: 20px;
+}
+body #rechts {
+  text-align: end;
+  background-image: url("drachenschwanz.png");
+  background-size: 1400px;
+  background-repeat: no-repeat;
+  background-position-x: -300px;
+  background-position-y: -100px;
+  padding-right: 20px;
+}
+body .thema {
+  display: inline-block;
+  color: #00408c;
+  text-decoration: none;
+  font-size: 45px;
+  text-shadow: 1px 1px 2px #df8573;
+}
+body .thema:hover {
+  -webkit-animation: shake 0.5s ease-in-out;
+          animation: shake 0.5s ease-in-out;
+  text-decoration: underline;
+  color: #f9b8af;
+}
+body .thema:active {
+  color: #00408c;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  75% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes shake {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  75% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+body .card {
+  text-align: center;
+  margin-top: 200px;
+  outline: thick ridge #96add6;
+  background-color: #00408c;
+  background-image: url(welle2.png);
+  background-position: center;
+  background-repeat: repeat;
+  border-radius: 0;
+}
+body .flip-card {
+  background-color: transparent;
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  margin: auto;
+}
+body .flip-card-inner {
+  margin-top: 200px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  outline: thick ridge #96add6;
+}
+body .flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+body .flip-card-front,
+body .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-image: url("welle2.png");
+  background-position: center;
+  background-repeat: repeat;
+}
+body .flip-card-front {
+  color: black;
+  background-color: #00408c;
+  background-size: 100%;
+}
+body .flip-card-front p {
+  margin-top: 180px;
+}
+body .flip-card-back {
+  color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  background-color: #00408c;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .flip-card-back p {
+  margin: 20px;
+}
+body .flip-card-back img {
+  height: 50%;
+  width: 30%;
+  margin-right: 20px;
+}
+body area:hover + .tooltip {
+  display: block;
+}
+body .bilder img {
+  margin-top: 30px;
+}
+body .ecke {
+  margin-left: -6px;
+  width: 200px;
+  height: auto;
+}
+body .footer {
+  background-color: #00408c;
+}
+body .liste a {
+  color: white;
+  text-decoration: none;
+}
+body .liste a:hover {
+  text-decoration: underline;
+  color: black;
+}
+body #copy {
+  color: black;
+  text-shadow: none;
+}
+body .kontakt {
+  margin-top: -200px;
+  margin-bottom: -270px;
+}
+body .cover-container {
+  height: 80vh;
+  background-color: #00408c;
+}
+body .butt {
+  background-color: transparent;
+  border: none;
+}
+body .butt:hover {
+  background-color: transparent;
+  text-decoration: underline;
+  color: black;
+}
+body .butt::after {
+  background-color: transparent;
+  color: #000000;
+  text-decoration: underline;
+}
+body .modal-content {
+  background-color: #ffebe8;
+}
+body #buttoon {
+  background-color: #f9b8af;
+}
