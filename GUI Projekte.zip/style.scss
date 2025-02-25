@@ -1,0 +1,324 @@
+body {
+    // allgemein
+
+    background-color: #c46552;
+    letter-spacing: 1px;
+    background-image: url(kreis.png);
+    filter: saturate(120%);
+    background-repeat: repeat;
+
+    // aufbau
+
+    .Ueberschrift {
+        padding-top: 180px;
+    }
+
+    h1 {
+        float: none;
+        width: auto;
+        padding: 20px;
+        color: #f2eee9;
+        line-height: 10px;
+        animation: fadeIn 2s ease-in-out;
+        font-family: serif;
+        font-size: 100px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    #assetsueberschrift {
+        margin-top: -120px;
+    }
+
+    p,
+    .form-label {
+        float: none;
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+        border: #000000;
+    }
+
+    hr {
+        color: #f9b8af;
+        opacity: 100%;
+    }
+
+    #hintergrund,
+    #anleitung,
+    #uebermich,
+    #collab,
+    #figuren,
+    #karten,
+    #spielfelder,
+    #kontakt {
+        text-decoration: wavy;
+        font-family: serif;
+        color: #f2eee9;
+        font-size: 40px;
+        text-shadow: 4px 4px 4px #000000;
+    }
+
+    .themen {
+        margin-top: 120px;
+    }
+
+    .themen1 {
+        margin-top: 50px;
+    }
+
+    .aufbau {
+        max-width: 75%;
+        margin: 350px auto;
+    }
+
+    // navbar
+
+    .navbar {
+        background-color: #00408c;
+    }
+
+    .navbar-toggler {
+        background-color: #f9b8af;
+        margin-right: 10px;
+    }
+
+    .nav-link {
+        color: #f2eee9;
+    }
+
+    .drake {
+        width: auto;
+        margin: 0;
+        padding: 0;
+        line-height: 60px;
+        animation: fadeIn 2s ease-in-out;
+        font-family: serif;
+        font-size: 50px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    #links {
+        text-align: start;
+        background-image: url("drachenkopf.png");
+        background-size: 1400px;
+        background-repeat: no-repeat;
+        background-position-x: 300px;
+        background-position-y: -100px;
+        padding-left: 20px;
+    }
+
+    #rechts {
+        text-align: end;
+        background-image: url("drachenschwanz.png");
+        background-size: 1400px;
+        background-repeat: no-repeat;
+        background-position-x: -300px;
+        background-position-y: -100px;
+        padding-right: 20px;
+    }
+
+    // Effekte mit chatgpt
+
+    .thema {
+        display: inline-block;
+        color: #00408c;
+        text-decoration: none;
+        font-size: 45px;
+        text-shadow: 1px 1px 2px #df8573;
+    }
+
+    .thema:hover {
+        animation: shake 0.5s ease-in-out;
+        text-decoration: underline;
+        color: #f9b8af;
+    }
+
+    .thema:active {
+        color: #00408c;
+    }
+
+    // animationen mit chatgpt
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes shake {
+        0% {
+            transform: translateX(0);
+        }
+        25% {
+            transform: translateX(-5px);
+        }
+        50% {
+            transform: translateX(10px);
+        }
+        75% {
+            transform: translateX(-5px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    // card
+
+    .card {
+        text-align: center;
+        margin-top: 200px;
+        outline: thick ridge #96add6;
+        background-color: #00408c;
+        background-image: url(welle2.png);
+        background-position: center;
+        background-repeat: repeat;
+        border-radius: 0;
+    }
+
+    // flip-card Template von https://www.w3schools.com/howto/howto_css_flip_card.asp ||| Zugriff am 13.02.25 17:04
+
+    .flip-card {
+        background-color: transparent;
+        width: 100%;
+        max-width: 100%;
+        height: 400px;
+        perspective: 1000px;
+        margin: auto;
+    }
+
+    .flip-card-inner {
+        margin-top: 200px;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        outline: thick ridge #96add6;
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-image: url("welle2.png");
+        background-position: center;
+        background-repeat: repeat;
+    }
+
+    .flip-card-front {
+        color: black;
+        background-color: #00408c;
+        background-size: 100%;
+    }
+
+    .flip-card-front p {
+        margin-top: 180px;
+    }
+
+    .flip-card-back {
+        color: white;
+        transform: rotateY(180deg);
+        background-color: #00408c;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .flip-card-back p {
+        margin: 20px;
+    }
+
+    .flip-card-back img {
+        height: 50%;
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    area:hover + .tooltip {
+        display: block;
+    }
+
+    .bilder img {
+        margin-top: 30px;
+    }
+
+    // Bilder
+
+    .ecke {
+        margin-left: -6px;
+        width: 200px;
+        height: auto;
+    }
+
+    // Footer
+
+    .footer {
+        background-color: #00408c;
+    }
+
+    .liste a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .liste a:hover {
+        text-decoration: underline;
+        color: black;
+    }
+
+    #copy {
+        color: black;
+        text-shadow: none;
+    }
+
+    // Kontaktformular
+
+    .kontakt {
+        margin-top: -200px;
+        margin-bottom: -270px;
+    }
+
+    // cover
+    .cover-container {
+        height: 80vh;
+        background-color: #00408c;
+    }
+
+    // Mmodal
+
+    .butt {
+        background-color: transparent;
+        border: none;
+    }
+
+    .butt:hover {
+        background-color: transparent;
+        text-decoration: underline;
+        color: black;
+    }
+
+    .butt::after {
+        background-color: transparent;
+        color: #000000;
+        text-decoration: underline;
+    }
+
+    .modal-content {
+        background-color: #ffebe8;
+    }
+
+    #buttoon {
+        background-color: #f9b8af;
+    }
+}
